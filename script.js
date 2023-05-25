@@ -17,3 +17,7 @@ function compareGuesses(human, computer, number) {
 function updateScore(winner) {
     winner === 'human' ? humanScore += 1 : computerScore += 1;
 }
+
+function advanceRound() {
+    currentRoundNumber += 1;
+}
