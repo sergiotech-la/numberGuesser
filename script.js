@@ -13,3 +13,7 @@ function generateTarget() {
 function compareGuesses(human, computer, number) {
     human === computer ? true : Math.abs(human - number) < Math.abs(computer - number);
 }
+
+function updateScore(winner) {
+    winner === 'human' ? humanScore += 1 : computerScore += 1;
+}
